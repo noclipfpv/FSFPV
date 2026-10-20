@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AssetPackage Version="0.1.0">
+	<PackageOrderHint>CUSTOM_INSTRUMENT</PackageOrderHint>
+	<ItemSettings>
+		<ContentType>MISC</ContentType>
+		<Title>FSFPV - FPV Drone</Title>
+		<Manufacturer/>
+		<Creator>NoclipFPV</Creator>
+	</ItemSettings>
+	<Flags>
+		<VisibleInStore>false</VisibleInStore>
+		<CanBeReferenced>false</CanBeReferenced>
+	</Flags>
+	<AssetGroups>
+		<!-- Toolbar panel definition, compiled to .spb -->
+		<AssetGroup Name="panel">
+			<Type>SPB</Type>
+			<Flags>
+				<FSXCompatibility>false</FSXCompatibility>
+			</Flags>
+			<AssetDir>PackageSources\InGamePanels\</AssetDir>
+			<OutputDir>InGamePanels\</OutputDir>
+		</AssetGroup>
+		<!-- Panel HTML/JS/CSS and toolbar icon -->
+		<AssetGroup Name="ui">
+			<Type>Copy</Type>
+			<Flags>
+				<FSXCompatibility>false</FSXCompatibility>
+			</Flags>
+			<AssetDir>PackageSources\html_ui\</AssetDir>
+			<OutputDir>html_ui\</OutputDir>
+		</AssetGroup>
+		<!-- Standalone WASM module (FpvDrone.wasm built with Visual Studio) -->
+		<AssetGroup Name="module">
+			<Type>Copy</Type>
+			<Flags>
+				<FSXCompatibility>false</FSXCompatibility>
+			</Flags>
+			<AssetDir>PackageSources\modules\</AssetDir>
+			<OutputDir>modules\</OutputDir>
+		</AssetGroup>
+	</AssetGroups>
+</AssetPackage>

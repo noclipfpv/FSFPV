@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SimBase.Document Type="InGamePanels" version="1,0">
+	<Filename>noclip_fpvdrone_panel.spb</Filename>
+	<InGamePanels.InGamePanelDefinition
+		id="PANEL_FPV_DRONE"
+		Name="FPV Drone"
+		url="html_ui/InGamePanels/FpvDrone/FpvDrone.html"
+		resizeDirections="Both"
+		minWidth="20"
+		minHeight="30"
+		defaultWidth="26"
+		defaultHeight="62"
+		defaultTop="12"
+		defaultRight="2"
+		icon="ICON_TOOLBAR_FPV_DRONE"
+		buttonVisible="true">
+	</InGamePanels.InGamePanelDefinition>
+</SimBase.Document>

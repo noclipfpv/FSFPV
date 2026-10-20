@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FPV Drone</title>
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="/SCSS/common.css" />
+    <link rel="stylesheet" href="./FpvDrone.css" />
+
+    <script type="text/javascript" src="/JS/coherent.js"></script>
+    <script type="text/javascript" src="/JS/common.js"></script>
+    <script type="text/javascript" src="/JS/dataStorage.js"></script>
+    <script type="text/javascript" src="/JS/buttons.js"></script>
+    <script type="text/javascript" src="/JS/Services/ToolBarPanels.js"></script>
+    <script type="text/javascript" src="/JS/Services/CommBus.js"></script>
+
+    <link rel="import" href="/templates/ingameUi/ingameUi.html" />
+    <link rel="import" href="/templates/ingameUiHeader/ingameUiHeader.html" />
+
+    <script type="text/javascript" src="./FpvDrone.js"></script>
+</head>
+
+<body class="border-box">
+    <ingamepanel-fpvdrone>
+        <ingame-ui
+            id="FpvDrone_Frame"
+            panel-id="PANEL_FPV_DRONE"
+            title="FPV Drone"
+            class="ingameUiFrame"
+            content-fit="false"
+            resize="both"
+            min-width="360"
+            min-height="420">
+            <div id="FpvRoot">
+                <div id="FpvHeader">
+                    <div id="FpvPower" class="fpv-power">TURN ON</div>
+                    <div id="FpvSticks">
+                        <div class="fpv-stick"><div id="FpvStickLeft" class="fpv-dot"></div></div>
+                        <div class="fpv-stick"><div id="FpvStickRight" class="fpv-dot"></div></div>
+                    </div>
+                </div>
+                <div id="FpvStatus" class="fpv-status">Waiting for the FPV Drone module...</div>
+                <div id="FpvError" class="fpv-error"></div>
+                <div id="FpvTabs"></div>
+                <div id="FpvContent"></div>
+            </div>
+        </ingame-ui>
+    </ingamepanel-fpvdrone>
+</body>
+</html>

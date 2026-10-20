@@ -1,0 +1,11 @@
+# MSFS package tool output
+Packages/
+PackagesMetadata/
+_PackageInt/
+*.xml.user
+# WASM build
+wasm/obj/
+*.pdb
+# Visual Studio
+.vs/
+*.vcxproj.user
